@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script data-main="scripts/main" src="scripts/require.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all"/>
+  </head>
+  <body>
+  <div>
+    <h3>Configuration:</h3>
+    <table>
+      <tr>
+        <td>Total database records:</td>
+        <td id="conf-dbsize"></td>
+      </tr>
+      <tr>
+        <td>Test cases (<a href="scripts/tests">code</a>):</td>
+        <td id="conf-tests"></td>
+      </tr>
+      <tr>
+        <td>Sets per test case:</td>
+        <td id="conf-sets"></td>
+      </tr>
+      <tr>
+        <td>Iterations per set:</td>
+        <td id="conf-iterations"></td>
+      </tr>
+      <tr>
+        <td>Keys queried per iteration:</td>
+        <td id="conf-keys"></td>
+      </tr>
+    </table>
+  </div>
+  <hr/>
+  <div>
+    <input id="start-button" type="submit" value="Start Test"/>
+  </div>
+  <hr/>
+  <div id="output-running" class="hidden">
+  Tests running...
+  </div>
+  <div id="output-results" class="hidden">
+    <h3>Results:</h3>
+    <p>Milliseconds per test case set.</p>
+    <table border="1">
+      <tr>
+        <th>Test Case</th>
+        <th>Min</th>
+        <th>Median</th>
+        <th>Mean</th>
+        <th>Max</th>
+        <th>Std Dev</th>
+      </tr>
+      <tr id="results-cursor">
+        <td>cursor</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id="results-get">
+        <td>get</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id="results-getAll">
+        <td>getAll</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr id="results-inList">
+        <td>inList</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </div>
+  </body>
+</html>
