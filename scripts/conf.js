@@ -4,6 +4,6 @@ define({
   numKeys: 250,
   iterations: 10,
   sets: 30,
-  tests: ['cursor', 'get', 'getAll', 'inList'],
+  tests: ['cursor', 'get', 'getAll', 'inList', 'inListCursor'],
   testPrefix: 'tests/'
 });

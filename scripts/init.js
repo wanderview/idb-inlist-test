@@ -5,7 +5,6 @@ define(['conf', 'tests', 'data'], function(conf, tests, data) {
       openReq.onupgradeneeded = function(evt) {
         var db = openReq.result;
         var store = db.createObjectStore(conf.store, {autoIncrement: true});
-        console.log(data.raw.length);
         for (var i in data.raw) {
           store.add(data.raw[i]);
         }
